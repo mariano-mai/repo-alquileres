@@ -1,9 +1,15 @@
 from .base import *
-import os
 
-DEBUG = False
+DEBUG = False #<-- para que no muestre los errores si algo falla, porque puede mostrar información sensible
 
-SECRET_KEY = os.environ['SECRET_KEY']
+ALLOWED_HOSTS = ['myportfoliio.com']
 
-# SECURITY WARNING: update this when you have the production host
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
+DATEBASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.sqlite3',
+		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	}
+}
+
+STATIC_URL = 'https://myportfolio.com/static/'
+MEDIA_URL = 'https://myportfolio.com/media/'
