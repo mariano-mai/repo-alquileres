@@ -6,6 +6,6 @@ class pago(models.Model):
     fecha_de_pago = models.DateField(blank=True, null=True)
     periodo_correspondiente = models.CharField(max_length=25)
     importe_alquiler = models.FloatField(max_length=10)
-    importe_electricidad = models.FloatField(max_length=10)
-    importe_agua = models.FloatField(max_length=10)
+    importe_electricidad = models.FloatField(max_length=10, blank=True)
+    importe_agua = models.FloatField(max_length=10, blank=True)
     pagado = models.BooleanField
