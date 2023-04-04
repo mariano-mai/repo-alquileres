@@ -1,4 +1,4 @@
-from .base import *
+'''from .base import *
 
 DEBUG = False #<-- para que no muestre los errores si algo falla, porque puede mostrar información sensible
 
@@ -13,3 +13,4 @@ DATEBASES = {
 
 STATIC_URL = 'https://myportfolio.com/static/'
 MEDIA_URL = 'https://myportfolio.com/media/'
+'''
